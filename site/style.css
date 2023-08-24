@@ -1,9 +1,100 @@
 @charset "UTF-8";
 
 :root{
-    --colorBackground: #D0E4FC;
+    --corBackground: #D0E4FC;
+    --corNavEFooter: #1C569A;
+    --corAmareloEscuro: #E0B943;
+    --corAmareloClaro: #F1DA95;
 }
 
 *{
-    margin
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    background-color: var(--corBackground);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+body nav{
+    width: 100%;
+    height: 100px;
+    background-color: var(--corNavEFooter);
+}
+main header{
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: start
+}
+main header section{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: start;
+}
+main header section div{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: start;
+}
+main header figure{
+    border: 2px solid black;
+    height: auto;
+    width: 100px;
+}
+
+main #categorias{
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main #Materias{
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main #Materias div{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main #Materias article{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+main #Materias article figure{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: var(--corNavEFooter);
 }

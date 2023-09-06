@@ -100,6 +100,7 @@ header figure img{
     transition: transform 0.3s ease-in-out;
     flex-direction: row;
     justify-content: space-between;
+    transition: transform 1s ease, background-color 2s ease;
 }
 
 .slide{
@@ -114,6 +115,7 @@ header figure img{
     color: #000000;
     text-decoration: none;
     flex: 0 0 100%;
+    transition: opacity 2s ease;
 }    
 .slide h2{
     font-size: 1.5rem;

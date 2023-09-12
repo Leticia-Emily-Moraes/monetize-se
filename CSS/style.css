@@ -85,7 +85,8 @@ header figure img{
 }
 .container {
     position: relative;
-    width: 90%;
+    width: 100%;
+    height: 350px;
     overflow: hidden;
     margin: 0 auto;
     display: flex;
@@ -96,6 +97,7 @@ header figure img{
 
 .slider {
     width: 100%;
+    height: 100%;
     display: flex;
     transition: transform 0.3s ease-in-out;
     flex-direction: row;
@@ -329,6 +331,9 @@ footer{
     }
 }
 @media (min-width: 1024px){
+    header{
+        max-width: 900px;
+    }
     header h1{
         width: 30%;
         text-align: center;
@@ -338,8 +343,14 @@ footer{
         width: 55%;
         min-width: 200px;
     }
+    #categorias{
+        max-width: 900px;
+    }
     #categorias article a{
-        width: 35%;
+        width: 20%;
+    }
+    #Materias{
+        max-width: 900px;
     }
     #Materias article{
         width: 70%;

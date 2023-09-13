@@ -14,6 +14,7 @@
     box-sizing: border-box;
 }
 
+
 body{
     background-color: var(--corBackground);
     width: 100%;
@@ -35,6 +36,18 @@ body nav{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(148, 216, 255); 
+  border-radius: 20px;
 }
 nav span{
     width: 50%;
@@ -149,7 +162,7 @@ header figure img{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0);
     color: #ffffff;
     border: none;
     padding: 10px;
@@ -157,11 +170,13 @@ header figure img{
     font-size: 24px;
     transition: opacity 0.3s;
     z-index: 1;
+    height: 100%;
 }
 
 .seta-anterior {
     left: 0;
     opacity: 0;
+
 }
 
 .seta-proxima {

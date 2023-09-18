@@ -26,42 +26,42 @@ body{
     align-items: center;
     font-family: 'Roboto';
 }
+body::-webkit-scrollbar {
+    width: 10px;
+}
+  
+body::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(148, 216, 255); 
+    border-radius: 20px;
+}
 body nav{
     width: 100%;
     height: 15vh;
     min-height: 80px;
+    max-height: 150px;
     background-color: var(--corAzulMaisEscuro);
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-}
-body::-webkit-scrollbar {
-  width: 10px;
-}
-
-body::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0);
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: rgb(148, 216, 255); 
-  border-radius: 20px;
-}
-nav span{
-    width: 50%;
+    padding: 15px;
 }
 nav a{
-    width: 50%;
+    width: 30%;
+    height: 100%;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-nav img{
-    width: 200px;
+nav a img{
+    height: 100%;
 }
 main{
     width: 100%;
@@ -99,7 +99,8 @@ header figure img{
 .container {
     position: relative;
     width: 100%;
-    height: 350px;
+    min-height: 200px;
+    max-height: 450px;
     overflow: hidden;
     margin: 0 auto;
     display: flex;
@@ -119,42 +120,51 @@ header figure img{
 }
 
 .slide{
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: start;
     border: 1px solid #000000;
-    padding: 10px;
+    padding: 40px;
     margin: 0px 20px 0px 0px;
     color: #000000;
     text-decoration: none;
     flex: 0 0 100%;
     transition: opacity 2s ease;
+}
+.texto{
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
 }    
-.slide h2{
+.texto h2{
     font-size: 1.5rem;
     margin: 10px;
 }
-.slide div{
+.texto div{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: start;
     margin: 5px;
 }
-.slide div #tema{
+.texto div #tema{
     border: 1px solid #000000;
     padding: 5px 20px;
     margin: 5px;
     text-align: center;
 }
-.slide div p{
+.texto div p{
     padding: 5px;
     margin: 5px;
     text-align: center;
 }
-.slide p{
+.texto p{
     margin: 10px;
 }
 .seta-anterior,
@@ -170,7 +180,10 @@ header figure img{
     font-size: 24px;
     transition: opacity 0.3s;
     z-index: 1;
-    height: 100%;
+    height: 90%;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 700;
 }
 
 .seta-anterior {

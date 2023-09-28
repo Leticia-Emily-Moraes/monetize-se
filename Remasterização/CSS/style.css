@@ -21,7 +21,7 @@ body{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
     font-family: 'Roboto';
 }
@@ -38,47 +38,47 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;
 }
 body nav{
-    display: flex;
     width: 100%;
     height: 80px;
     background-color: var(--corAzulMaisEscuro);
-    align-items: center;
+    display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: center;
     padding: 5px 15px;
+    box-shadow: 1px 1px 20px #9BC0EB;
 }
-nav .logo{
-    height: 100%;
-}
-nav .logo img{
+nav img{
     height: 100%;
 }
 nav ul{
     display: flex;
-    flex-wrap: wrap;
     list-style: none;
 }
 nav ul li{
     margin: 0 10px;
 }
 nav ul li a{
-    text-decoration: none;
     color: #000000;
+    text-decoration: none;
     font-size: 1.3em;
-    transition: all 0.3s ease;
-    padding: 8px 15px;
+    margin: 8px 15px;
+    padding-bottom: 5px;
+    background: linear-gradient(var(--corBotao) 0%, var(--corBotao) 98%);
+    background-size: 0px 2px;
+    background-repeat: no-repeat;
+    background-position: left 90%;
 }
-
 nav ul li a.active,
 nav ul li a:hover{
-    background-color: #4480c560;
+    transition: 0.3s;
+    background-size: 100% 2px;
+    text-shadow: 2px 3px 10px #4480c5c4;
 }
-nav .MenuResponsivo i{
-    color: #ffffff;
+nav #MenuHam{
     cursor: pointer;
+    height: 50px;
     display: none;
 }
-
 main{
     width: 100%;
     height: auto;
@@ -90,18 +90,19 @@ main{
 }
 header{
     width: 90%;
+    height: auto;
     min-width: 320px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 0px 20px;
 }
 header h1{
     width: 100%;
     text-align: center;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     margin: 10px
 }
 header figure{
@@ -112,7 +113,7 @@ header figure{
 header figure img{
     width: 100%;
 }
-.container {
+#container{
     position: relative;
     width: 100%;
     min-height: 200px;
@@ -124,8 +125,7 @@ header figure img{
     justify-content: center;
     align-items: center;
 }
-
-.slider {
+#slider {
     width: 100%;
     height: 100%;
     display: flex;
@@ -134,7 +134,6 @@ header figure img{
     justify-content: space-between;
     transition: transform 1s ease;
 }
-
 .slide{
     height: auto;
     display: flex;
@@ -150,7 +149,7 @@ header figure img{
     flex: 0 0 100%;
     transition: opacity 2s ease;
 }
-.texto{
+#texto{
     width: 40%;
     display: flex;
     flex-wrap: wrap;
@@ -158,33 +157,32 @@ header figure img{
     justify-content: center;
     align-items: start;
 }    
-.texto h2{
+#texto h2{
     font-size: 1.5rem;
-    margin: 10px;
 }
-.texto div{
+#texto div{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: start;
     margin: 5px;
 }
-.texto div #tema{
+#texto div #tema{
     border: 1px solid #000000;
     padding: 5px 20px;
     margin: 5px;
     text-align: center;
 }
-.texto div p{
+#texto div p{
     padding: 5px;
     margin: 5px;
     text-align: center;
 }
-.texto p{
+#texto p{
     margin: 10px;
 }
-.seta-anterior,
-.seta-proxima {
+#seta-anterior,
+#seta-proxima {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -201,20 +199,19 @@ header figure img{
     font-size: 2.5em;
     font-weight: 700;
 }
-
-.seta-anterior {
+#seta-anterior {
     left: 0;
     opacity: 0;
 
 }
 
-.seta-proxima {
+#seta-proxima {
     right: 0;
     opacity: 0;
 }
 
-.container:hover .seta-anterior,
-.container:hover .seta-proxima {
+#container:hover #seta-anterior,
+#container:hover #seta-proxima {
     opacity: 1;
 }
 .indicadores{
@@ -340,113 +337,4 @@ footer{
     height: 15vh;
     min-height: 80px;
     background-color: var(--corAzulMaisEscuro);
-}
-@media (min-width: 767px) and (max-width: 1023px){
-    header h1{
-        width: 30%;
-        text-align: center;
-        font-size: 1.75rem;
-    }
-    header figure{
-        width: 55%;
-        min-width: 200px;
-    }
-    #categorias article a{
-        width: 50%;
-        max-width: 250px;
-    }
-    #Materias article{
-        width: 70%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
-    #Materias aside{
-        background-color: aliceblue;
-        height: auto;
-        width: 20%;
-        display: block;
-    }
-    #Materias a{
-        width: 40%;
-    }
-    #Materias article #asideMobile{
-        display: none;
-    }
-}
-@media (min-width: 1024px){
-    header h1{
-        width: 30%;
-        text-align: center;
-        font-size: 1.75rem;
-    }
-    header{
-        max-width: 1000px;
-    }
-    header h1{
-        width: 30%;
-        text-align: center;
-        font-size: 1.75rem;
-    }
-    header figure{
-        width: 55%;
-        min-width: 200px;
-    }
-    #categorias{
-        max-width: 1000px;
-    }
-    #categorias article a{
-        width: 20%;
-    }
-    #Materias{
-        max-width: 1000px;
-    }
-    #Materias article{
-        width: 70%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
-    #Materias aside{
-        background-color: aliceblue;
-        height: auto;
-        width: 20%;
-        display: block;
-    }
-    #Materias a{
-        width: 45%;
-    }
-    #Materias article #asideMobile{
-        display: none;
-    }
-}
-@media (max-width: 767px){
-    nav ul{
-        position: fixed;
-        top: 80px;
-        left: -100%;
-        background-color: var(--corAzulMaisEscuro);
-        height: auto;
-        width: 100%;
-        text-align: center;
-        display: block;
-        transition: all 0.3s ease;
-    }
-    nav ul.open{
-        left: 0;
-    }
-    nav ul li{
-        width: 100%;
-        margin: 50px 0;
-    }
-    nav ul li a {
-        font-size: 1.5em;
-    }
-    nav .MenuResponsivo i{
-        display: block;
-    }
 }

@@ -1,13 +1,5 @@
-const slider = document.querySelector('.slider');
-const slide = document.querySelectorAll('.slide');
-const indicadores = document.querySelectorAll('.indicador');
-const setaAnterior = document.querySelector('.seta-anterior');
-const setaProxima = document.querySelector('.seta-proxima');
 var ul = document.querySelector('nav ul');
-var menuBtn = document.querySelector('.MenuResponsivo');
-let currentIndex = 0;
-let interval;
-
+var menuBtn = document.getElementById('MenuHam');
 
 function MostrarMenu(){
     if (ul.classList.contains('open')){
@@ -16,10 +8,22 @@ function MostrarMenu(){
         ul.classList.add('open');
     }
 }
+const slider = document.getElementById('slider');
+const slide = document.querySelectorAll('.slide');
+const indicadores = document.querySelectorAll('.indicador');
+const setaAnterior = document.getElementById('seta-anterior');
+const setaProxima = document.getElementById('seta-proxima');
+let currentIndex = 0;
+let interval;
+
+
 function criarIndicadores() {
     slide.forEach((_, index) => {
         const indicador = document.createElement('span');
         indicador.classList.add('indicador');
+        if (index === 0) {
+            indicador.classList.add('ativo'); // Adicionar 'ativo' ao primeiro indicador
+        }
         indicador.addEventListener('click', () => slidePara(index));
         document.querySelector('.indicadores').appendChild(indicador);
     });
@@ -69,9 +73,15 @@ setaProxima.addEventListener('click', () => {
     interval = setInterval(nextSlide, 10000);
 });
 
-menuBtn.addEventListener('click', () => {
-    MostrarMenu();
-});
-
 criarIndicadores();
-interval = setInterval(nextSlide, 10000);
+
+// Adicione uma verificação para rolagem infinita
+interval = setInterval(() => {
+    nextSlide();
+    if (currentIndex === slide.length - 1) {
+        setTimeout(() => {
+            currentIndex = 0;
+            atualizarSlider();
+        }, 500); // Atraso para criar um efeito suave de rolagem infinita
+    }
+}, 10000);

@@ -26,32 +26,45 @@ body{
     font-family: 'Roboto';
 }
 body nav{
+    display: flex;
     width: 100%;
-    height: 15vh;
-    min-height: 80px;
-    max-height: 150px;
+    height: 80px;
     background-color: var(--corAzulMaisEscuro);
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    padding: 15px;
+    flex-wrap: wrap;
+    padding: 5px 15px;
 }
-nav span{
-    width: 50%;
-}
-nav a{
-    width: 30%;
+nav .logo{
     height: 100%;
+}
+nav .logo img{
+    height: 100%;
+}
+nav ul{
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
 }
-nav a img{
-    height: 100%;
+nav ul li{
+    margin: 0 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.3em;
+    transition: all 0.3s ease;
+    padding: 8px 15px;
+}
+
+nav ul li a.active,
+nav ul li a:hover{
+    background-color: #4480c560;
+}
+nav .MenuResponsivo i{
+    color: #ffffff;
+    cursor: pointer;
+    display: none;
 }
 main{
     width: 100%;
@@ -67,35 +80,38 @@ main header{
     min-width: 320px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
     text-align: center;
 }
+main header h1{
+    margin: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.75rem;
+}
 main header figure{
+    margin: 10px;
     width: 90%;
 }
 main header figure img{
     width: 100%;
 }
 main section{
-    width: 90%;
+    width: 80%;
     min-width: 320px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    
 }
 main section article{
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: start;
     padding: 20px;
+    text-align: left;
 }
 main section aside{
     display: none;
@@ -110,9 +126,8 @@ main section aside{
         width: 55%;
         min-width: 200px;
     }
-    #categorias article a{
-        width: 50%;
-        max-width: 250px;
+    main article{
+        max-width: 1000px;
     }
     #Materias article{
         width: 70%;
@@ -141,12 +156,26 @@ main section aside{
         text-align: center;
         font-size: 1.75rem;
     }
+    header{
+        max-width: 1000px;
+    }
+    header h1{
+        width: 30%;
+        text-align: center;
+        font-size: 1.75rem;
+    }
     header figure{
         width: 55%;
         min-width: 200px;
     }
+    #categorias{
+        max-width: 1000px;
+    }
     #categorias article a{
-        width: 35%;
+        width: 20%;
+    }
+    #Materias{
+        max-width: 1000px;
     }
     #Materias article{
         width: 70%;
@@ -167,5 +196,31 @@ main section aside{
     }
     #Materias article #asideMobile{
         display: none;
+    }
+}
+@media (max-width: 767px){
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: var(--corAzulMaisEscuro);
+        height: auto;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    nav ul.open{
+        left: 0;
+    }
+    nav ul li{
+        width: 100%;
+        margin: 50px 0;
+    }
+    nav ul li a {
+        font-size: 1.5em;
+    }
+    nav .MenuResponsivo i{
+        display: block;
     }
 }

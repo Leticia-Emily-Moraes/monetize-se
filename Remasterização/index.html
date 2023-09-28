@@ -5,20 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="CSS/Responsividade.css">
     <title>Educação Financeira</title>
 </head>
-
 <body>
     <nav>
-        <div class="logo"><img src="IMG/LogoSemFundo.PNG" alt="Menu"></div>
-        <div class="MenuResponsivo">
-            <i class="material-symbols-outlined">menu</i>
+        <img src="IMG/LogoSemFundo.PNG" alt="LogoDaEmpresa">
+        <div>
+            <img src="IMG/MenuBranco.png" alt="IconeDoMenu" id="MenuHam">
         </div>
         <ul>
             <li><a href="index.html">Principal</a></li>
             <li><a href="">Blog</a></li>
-            <li><a href="">Quem somos</a></li>
+            <li><a href="">Quem Somos</a></li>
             <li><a href="">Serviços</a></li>
         </ul>
     </nav>
@@ -29,11 +28,11 @@
                 <img src="IMG/LogoComFundo.PNG" alt="LogoDoBlog">
             </figure>
         </header>
-        <section class="container">
-            <button class="seta-anterior">⇦</button>
-            <div class="slider">
+        <section id="container">
+            <button id="seta-anterior">⇦</button> 
+            <div id="slider">
                 <a class="slide" href="Materia1.html">
-                    <div class="texto">
+                    <div id="texto">
                         <h2>Nome da Matéria1</h2>
                         <div>
                             <p class="tema">tema</p>
@@ -43,7 +42,7 @@
                     </div>
                 </a>
                 <a class="slide" href="Materia2.html">
-                    <div class="texto">
+                    <div id="texto">
                         <h2>Nome da Matéria2</h2>
                         <div>
                             <p class="tema">tema</p>
@@ -53,7 +52,7 @@
                     </div>
                 </a>
                 <a class="slide" href="Materia3.html">
-                    <div class="texto">
+                    <div id="texto">
                         <h2>Nome da Matéria3</h2>
                         <div>
                             <p class="tema">tema</p>
@@ -63,10 +62,8 @@
                     </div>
                 </a>
             </div>
-            <button class="seta-proxima">⇨</button>
-            <div class="indicadores">
-                
-            </div>
+            <button id="seta-proxima">⇨</button>
+            <div class="indicadores"></div>
         </section>
         <section id="categorias">
             <h3>O que procura?</h3>
@@ -126,8 +123,8 @@
                 </aside>
             </div>
         </section>
-        <section id="Nesler">
-            <h1></h1>
+        <section id="Newsletter">
+            <h1>Assine nossa <span>Newsletter</span></h1>
             <p></p>
             <form action="">
                 <input type="text" name="" id="">
@@ -135,24 +132,5 @@
             </form>
         </section>
     </main>
-    <footer>
-        <div>
-            <div id="LogoEmpresa">
-                <img src="" alt="">
-                <p>nome da empresa</p>
-            </div>
-            <div id="Mapa"></div>
-            <div id="Contatos">
-                <h6>Contatos</h6>
-                <p>fone</p>
-                <p>celular</p>
-                <p>email</p>
-                <p>Rede Social</p>
-            </div>
-        </div>
-        <p>Direitos reservados por - Feito por <a href="">Leticia Moraes</a></p>
-    </footer>
     <script src="JS/script.js"></script>
 </body>
-
-</html>

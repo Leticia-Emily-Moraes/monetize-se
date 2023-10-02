@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/Responsividade.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <title>Educação Financeira</title>
 </head>
+
 <body>
     <nav>
         <img src="IMG/LogoSemFundo.PNG" alt="LogoDaEmpresa">
@@ -24,12 +26,10 @@
     <main>
         <header>
             <h1>Bem vindo ao Educação Financeira<br>Seu blog de finanças para adolescentes</h1>
-            <figure id="LogoG">
-                <img src="IMG/LogoComFundo.PNG" alt="LogoDoBlog">
-            </figure>
+            <img src="IMG/LogoComFundo.PNG" alt="LogoDoBlog" id="LogoG">
         </header>
         <section id="container">
-            <button id="seta-anterior">⇦</button> 
+            <button id="seta-anterior">⇦</button>
             <div id="slider">
                 <a class="slide" href="Materia1.html">
                     <div id="texto">
@@ -90,6 +90,9 @@
                         <h4>titulo</h4>
                         <p>categoria categoria categoria categoria</p>
                     </a>
+                    <aside>
+                        <p>e</p>
+                    </aside>
                     <a href="Materia6.html">
                         <img src="" alt="">
                         <p class="temaM">Tema</p>
@@ -97,7 +100,7 @@
                         <p>categoria categoria categoria categoria</p>
                     </a>
                     <aside id="asideMobile">
-
+                        <p>e</p>
                     </aside>
                     <a href="Materia7.html">
                         <img src="" alt="">
@@ -105,6 +108,9 @@
                         <h4>titulo</h4>
                         <p>categoria categoria categoria categoria</p>
                     </a>
+                    <aside>
+                        <p>e</p>
+                    </aside>
                     <a href="Materia8.html">
                         <img src="" alt="">
                         <p class="temaM">Tema</p>
@@ -117,20 +123,40 @@
                         <h4>titulo</h4>
                         <p>categoria categoria categoria categoria</p>
                     </a>
+                    <aside>
+                        <p>e</p>
+                    </aside>
                 </article>
-                <aside>
-                    <p>e</p>
-                </aside>
             </div>
         </section>
         <section id="Newsletter">
-            <h1>Assine nossa <span>Newsletter</span></h1>
-            <p></p>
+            <div>
+                <h1>Assine nossa <span>Newsletter</span></h1>
+                <p>Preencha os campos para receber todos os dias dicas excluisvas de como cuidar do seu dinheiro</p>
+            </div>
             <form action="">
-                <input type="text" name="" id="">
-                <input type="text" name="" id="">
+                <input type="text" name="" id="" placeholder="Nome">
+                <input type="email" name="" id="" placeholder="Email">
             </form>
         </section>
     </main>
+    <footer>
+        <div id="container">
+            <div>
+                <img src="" alt="LogoDoBlog">
+                <p>MONETIZE-SE</p>
+            </div>
+            <div id="map" style="height: 200px;"></div>
+            <div>
+                <h3>Contato</h3>
+                <p>Endereço</p>
+                <p>Fone</p>
+                <p>Redes Sociais</p>
+                <p>Email</p>
+            </div>
+        </div>
+        <p>Direitos Reservados pela Monetize-se © <br> Feito por <a href="">Leticia Moraes</a></p>
+    </footer>
     <script src="JS/script.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </body>

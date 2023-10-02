@@ -85,3 +85,9 @@ interval = setInterval(() => {
         }, 500); // Atraso para criar um efeito suave de rolagem infinita
     }
 }, 10000);
+
+var map = L.map('map').setView([-23.694801249005703, -46.54852195767105], 13);
+
+   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+   }).addTo(map);

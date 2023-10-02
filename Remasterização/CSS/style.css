@@ -8,7 +8,7 @@
     --fontPrincipal: 'Roboto'; 
 }
 
-*, html{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -97,7 +97,7 @@ header{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0px 20px;
+    padding: 20px;
 }
 header h1{
     width: 100%;
@@ -105,12 +105,7 @@ header h1{
     font-size: 1.5rem;
     margin: 10px
 }
-header figure{
-    width: 85%;
-    min-width: 200px;
-    margin: 20px 30px;
-}
-header figure img{
+header #LogoG{
     width: 100%;
 }
 #container{
@@ -274,15 +269,13 @@ header figure img{
     justify-content: center;
     align-items: center;
     padding: 10px;
-    border: 1px solid #000000;
-    
 }
 #Materias #ComAside{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
 }
 #Materias article{
     width: 100%;
@@ -332,9 +325,54 @@ header figure img{
     width: 30%;
     display: none;
 }
+#Newsletter{
+    width: 100%;
+    background-color: var(--corBotao);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0px;
+}
+#Newsletter h1,p{
+    margin: 5px;
+}
+#Newsletter span{
+}
+#Newsletter form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#Newsletter form input{
+    width: 80%;
+    height: 40px;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #94d8ff;
+    border-radius: 5px;
+}
 footer{
     width: 100%;
-    height: 15vh;
-    min-height: 80px;
+    text-align: center;
+    padding: 15px;
     background-color: var(--corAzulMaisEscuro);
+}
+footer p{
+    font-size: 0.9rem;
+}
+footer #container{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    font-size: 1rem;
 }

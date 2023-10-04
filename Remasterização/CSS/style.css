@@ -376,3 +376,7 @@ footer #container{
     padding: 0px 20px;
     font-size: 1rem;
 }
+#map {
+    height: 200px;
+    width: 100%;
+  }

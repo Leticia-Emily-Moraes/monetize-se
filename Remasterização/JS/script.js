@@ -1,13 +1,17 @@
 var ul = document.querySelector('nav ul');
 var menuBtn = document.getElementById('MenuHam');
 
-function MostrarMenu(){
-    if (ul.classList.contains('open')){
+function MostrarMenu() {
+    if (ul.classList.contains('open')) {
         ul.classList.remove('open');
-    }else{
+    } else {
         ul.classList.add('open');
     }
 }
+menuBtn.addEventListener('click', () => {
+    MostrarMenu();
+});
+
 const slider = document.getElementById('slider');
 const slide = document.querySelectorAll('.slide');
 const indicadores = document.querySelectorAll('.indicador');
@@ -86,8 +90,27 @@ interval = setInterval(() => {
     }
 }, 10000);
 
-var map = L.map('map').setView([-23.694801249005703, -46.54852195767105], 13);
+inicializarMapa();
+function inicializarMapa() {
+    var mapOptions = {
+        center: { lat: -23.69147, lng: -46.54886 },
+        zoom: 15
+    };
+    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
-   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-   }).addTo(map);
+    var coordenadas = { lat: -23.69147, lng: -46.54886 };
+
+    var marker = new google.maps.Marker({
+        position: coordenadas,
+        map: map,
+        title: "Condomínio Domo Business"
+    });
+    var infoWindow = new google.maps.InfoWindow({
+        content: "Monetize-se"
+      });
+
+      // Adicionar evento de clique no marcador
+      marker.addListener('click', function() {
+        infoWindow.open(map, marker);
+      });
+}

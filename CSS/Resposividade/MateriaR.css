@@ -1,0 +1,151 @@
+@media (max-width: 767px){
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: var(--corAzulMaisEscuro);
+        height: auto;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+        z-index: 1;
+    }
+    nav ul.open{
+        left: 0;
+    }
+    nav ul li{
+        width: 100%;
+        padding: 20px 0;
+        margin: 0;
+    }
+    nav ul li a {
+        width: 100%;
+        font-size: 1.5em;
+    }
+    nav #MenuHam{
+        display: block;
+    }
+}
+@media (min-width: 767px){
+    header{
+        width: 90%;
+        text-align: center;
+        margin: 10px 0;
+    }
+    header h3{
+        padding: 10px 0;
+    }
+    header figure{
+        width: 100%;
+        max-width: 700px;
+    }
+    header figure img{
+        width: 100%;
+    }
+    #TextoMateria{
+        width: 90%;
+        margin: 20px 0;
+    }
+    #Materias{
+        margin: 0;
+        padding: 0;
+    }
+    #Materias article{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #Materias article a{
+        width: auto;
+        margin: 20px 20px 0 0;
+    }
+    #Materias article aside{
+        background-color: aliceblue;
+        width: auto;
+        height: 90%;
+        margin: 20px 20px 0 0;
+        display: block;
+    }
+    #Materias a{
+        width: 40%;
+    }
+    #Materias article #asideMobile{
+        display: none;
+    }
+    #Newsletter{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #Newsletter div{
+        width: 40%;
+    }
+    #Newsletter form{
+        width: 50%;
+    }
+    #Newsletter form input{
+        width: 300px;
+        height: 40px;
+        margin: 10px;
+        padding: 5px;
+        border: 1px solid #94d8ff;
+        border-radius: 5px;
+    }
+    footer #container{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+@media (min-width: 1024px){
+    header{
+        width: 90%;
+        text-align: center;
+        margin: 10px 0;
+    }
+    header figure{
+        width: 100%;
+        max-width: 1000px;
+    }
+    #TextoMateria{
+        width: 80%;
+        margin: 20px 0;
+        max-width: 1000px;
+    }
+    #categorias{
+        max-width: 1000px;
+    }
+    #categorias article a{
+        width: 150px;
+    }
+    #Materias{
+        max-width: 1000px;
+        padding: 0;
+    }
+    #Materias a{
+        padding: 0;
+        margin: 10px 0px 0px 0px;
+    }
+    #Newsletter{
+        padding: 20px;
+    }
+    #Newsletter div{
+        width: 40%;
+    }
+    #Newsletter form{
+        width: 40%;
+    }
+    footer #containerF{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px;
+        font-size: 1rem;
+    }
+}

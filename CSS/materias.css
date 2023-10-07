@@ -35,7 +35,7 @@ body{
     justify-content: start;
     align-items: center;
 }
-body p, a{
+body p, a, ul, li, strong{
     font-family:var(--fontTexto);
 }
 body h1,h2,h3,h4,h5,h6{
@@ -159,17 +159,44 @@ header #imgG img{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 0px;
+    border: 3px solid var(--corBotao);
+    border-radius: 5px;
+    padding: 5px;
     margin: 20px 0px;
-    border: 1px solid #000000;
     color: #000000;
     text-decoration: none;
 }
-#Materias a img{
+#Materias a .imgMateria{
     height: 50%;
     width: 100%;
-    border-bottom: 2px solid #000000;
     margin-bottom: 10px;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px 5px 0px 0px;
+}
+#M4{
+    background-image: url('../IMG/Materia4.jpg');
+}
+
+#M5{
+    background-image: url('../IMG/Materia5.jpg');
+}
+
+#M6{
+    background-image: url('../IMG/Materia6.jpg');
+}
+
+#M7{
+    background-image: url('../IMG/Materia7.jpg');
+}
+
+#M8{
+    background-image: url('../IMG/Materia8.jpg');
+}
+
+#M9{
+    background-image: url('../IMG/Materia9.jpg');
 }
 #Materias a p{
     height: auto;

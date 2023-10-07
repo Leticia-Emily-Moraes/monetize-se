@@ -1,5 +1,5 @@
-@media (max-width: 767px){
-    nav ul{
+@media (max-width: 767px) {
+    nav ul {
         position: fixed;
         top: 80px;
         left: -100%;
@@ -9,84 +9,90 @@
         text-align: center;
         display: block;
         transition: all 0.3s ease;
-        z-index: 1;
+        z-index: 2;
     }
-    nav ul.open{
+
+    nav ul.open {
         left: 0;
     }
-    nav ul li{
+
+    nav ul li {
         width: 100%;
         padding: 20px 0;
         margin: 0;
     }
+
     nav ul li a {
         width: 100%;
         font-size: 1.5em;
     }
-    nav #MenuHam{
+
+    nav #MenuHam {
         display: block;
     }
 }
-@media (min-width: 767px){
-    #container{
+
+@media (min-width: 767px) {
+    #container {
         height: 500px;
     }
-    #texto{
+
+    #texto {
         background-color: #00000000;
         width: 40%;
         box-shadow: 5px 5px 5px #00000000;
-    }    
-    #texto h2{
+    }
+
+    #texto h2 {
         font-size: 1.5rem;
         font-weight: bolder;
     }
-    #texto div p{
+
+    #texto div p {
         font-size: 1rem;
     }
-    #texto p{
+
+    #texto p {
         font-size: 1rem;
     }
-    #categorias article a{
-        width: 50%;
+
+    #categorias article a {
         max-width: 250px;
-    }
-    #Materias{
-        margin: 0;
-        padding: 0;
-    }
-    #Materias article{
-        display: grid;
-        grid-template-columns: 40% 40% 20%;
-    }
-    #Materias article a{
-        width: auto;
         margin: 20px 20px 0 0;
     }
-    #Materias article aside{
+
+    #Materias article {
+        display: grid;
+        grid-template-columns: 35% 35% 20%;
+    }
+
+    #Materias article aside {
         background-color: aliceblue;
         height: 100%;
         width: 100%;
         display: block;
     }
-    #Materias a{
-        width: 40%;
-    }
-    #Materias article #asideMobile{
+
+    #Materias article #asideMobile {
         display: none;
     }
-    #Newsletter{
+
+    #Newsletter {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
     }
-    #Newsletter div{
+
+    #Newsletter div {
         width: 40%;
     }
-    #Newsletter form{
+
+    #Newsletter form {
         width: 50%;
     }
-    #Newsletter form input{
+
+    #Newsletter form input {
         width: 300px;
         height: 40px;
         margin: 10px;
@@ -94,7 +100,8 @@
         border: 1px solid #94d8ff;
         border-radius: 5px;
     }
-    footer #container{
+
+    footer #containerF {
         width: 100%;
         display: flex;
         flex-wrap: nowrap;
@@ -102,45 +109,61 @@
         justify-content: space-between;
         align-items: center;
     }
+
+    footer #containerF #Empresa img {
+        width: 200px;
+    }
 }
-@media (min-width: 1024px){
-    #texto{
+
+@media (min-width: 1024px) {
+    #texto {
         width: 40%;
-    }    
-    #texto h2{
+    }
+
+    #texto h2 {
         font-size: 1.75rem;
         font-weight: bolder;
     }
-    #texto div p{
+
+    #texto div p {
         font-size: 1.2rem;
     }
-    #texto p{
+
+    #texto p {
         font-size: 1.2rem;
     }
-    #categorias{
+
+    #categorias {
         max-width: 1000px;
     }
-    #categorias article a{
+
+    #categorias article a {
         width: 150px;
     }
-    #Materias{
+
+    #Materias {
         max-width: 1000px;
         padding: 0;
     }
-    #Materias a{
-        padding: 0;
+
+    #Materias a {
+        padding: 5px;
         margin: 10px 0px 0px 0px;
     }
-    #Newsletter{
+
+    #Newsletter {
         padding: 20px;
     }
-    #Newsletter div{
+
+    #Newsletter div {
         width: 40%;
     }
-    #Newsletter form{
+
+    #Newsletter form {
         width: 40%;
     }
-    footer #containerF{
+
+    footer #containerF {
         display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
@@ -148,5 +171,15 @@
         align-items: center;
         padding: 0px 20px;
         font-size: 1rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .slide {
+        padding: 40px;
+    }
+
+    #texto {
+        width: 30%;
     }
 }

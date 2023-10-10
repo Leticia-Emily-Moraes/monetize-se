@@ -14,7 +14,7 @@
 }
 
 :root {
-    --corBackground: #D0E4FC;
+    --corBackground: #D7E5FF;
     --corAzulMaisEscuro: #9BC0EB;
     --corBotao: #4481C5;
     --fontTexto: 'Archivo_Narrow';
@@ -44,6 +44,10 @@ ul,
 li,
 strong {
     font-family: var(--fontTexto);
+}
+
+strong{
+    color: #0037ff;
 }
 
 body h1,
@@ -108,13 +112,16 @@ nav ul li a {
 }
 
 nav ul li a.active,
-nav ul li a:hover {
+nav ul li a:hover{
     color: #000000;
     transition: 0.3s;
     background-size: 100% 2px;
     text-shadow: 2px 3px 10px #4480c5c4;
 }
-
+#Ativado{
+    text-shadow: 2px 3px 10px #4480c5c4;
+    color: #000000;
+}
 nav #MenuHam {
     cursor: pointer;
     height: 50px;
@@ -144,11 +151,81 @@ header {
     background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: 0px 1px 20px #4480c59c;
 }
 header h1{
     font-size: 1rem;
     width: 40%;
     text-align: center;
+}
+#QuemSomosP{
+    width: 90%;
+    padding: 10px;
+}
+#QuemSomosP h1,
+h2{
+    text-align: center;
+}
+#QuemSomosP figure{
+    display: none;
+}
+#QuemSomosP ul{
+    list-style-position: inside;
+    list-style:'🗸';
+    font-weight: bolder;
+    color: #0b73ea;
+    text-align: start;
+}
+#QuemSomosP ul li{
+    margin: 10px 0;
+}
+#QuemSomosP ul li p{
+    color: #000000;
+    display: inline;
+    font-weight: normal;
+}
+#QuemSomosP ul li strong{
+    color: #0b73ea;
+}
+#PropostaP{
+    width: 90%;
+    padding: 10px;
+}
+#ServicosP{
+    width: 90%;
+    padding: 10px;
+}
+#ServicosP figure{
+    display: none;
+}
+#ServicosP h1{
+    text-align: center;
+}
+#ServicosP ul{
+    list-style-position: inside;
+    list-style:'🗸';
+    font-weight: bolder;
+    color: #0b73ea;
+}
+#ServicosP ul li{
+    margin: 5px 0;
+}
+#ServicosP ul li p{
+    color: #000000;
+    display: inline;
+    font-weight: normal;
+}
+#ServicosP ul li a{
+    color: #0b73ea;
+    font-weight: normal;
+    text-decoration: none;
+}
+#ServicosP ul li a:hover{
+    color: #004492;
+    text-decoration: none;
+}
+#ServicosP ul li strong{
+    color: #0b73ea;
 }
 #Newsletter {
     width: 100%;
@@ -165,6 +242,7 @@ header h1{
 #Newsletter h1,
 p {
     margin: 5px;
+    text-align: center;
 }
 
 #Newsletter span {

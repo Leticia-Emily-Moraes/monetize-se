@@ -40,50 +40,6 @@
         font-size: 1.2rem;
     }
 
-    header {
-        height: 500px;
-        padding: 15px 15px 15px 30px;
-    }
-
-    header h1 {
-        font-size: 1.25rem;
-    }
-
-    #QuemSomosP div {
-        padding: 10px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #QuemSomosP div figure {
-        width: 45%;
-        display: block;
-    }
-
-    #QuemSomosP div ul {
-        width: 45%;
-    }
-
-    #ServicosP div {
-        width: 90%;
-        padding: 10px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #ServicosP div figure {
-        width: 45%;
-        display: block;
-    }
-
-    #ServicosP div ul {
-        width: 45%;
-    }
-
     #Newsletter {
         display: flex;
         flex-direction: row;
@@ -113,7 +69,7 @@
         border-radius: 5px;
     }
 
-    footer #container {
+    footer #containerF {
         width: 100%;
         display: flex;
         flex-wrap: nowrap;
@@ -122,8 +78,8 @@
         align-items: center;
     }
 
-    footer p {
-        font-size: 0.9rem;
+    footer #containerF #Empresa img {
+        width: 200px;
     }
 }
 
@@ -133,27 +89,8 @@
     }
 
     body header {
-        height: 500px;
+        height: 400px;
         padding: 15px 15px 15px 30px;
-    }
-
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    #QuemSomosP {
-        width: 90%;
-        padding: 10px;
-    }
-
-    #PropostaP {
-        width: 90%;
-        padding: 10px;
-    }
-
-    #ServicosP {
-        width: 90%;
-        padding: 10px;
     }
 
     #Newsletter {

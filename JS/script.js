@@ -1,11 +1,9 @@
 var ul = document.querySelector('nav ul');
 var menuBtn = document.getElementById('MenuHam');
-const containerSlider = document.getElementById('container');
 
 function MostrarMenu() {
     if (ul.classList.contains('open')) {
         ul.classList.remove('open');
-        containerSlider.style.position = static;
     } else {
         ul.classList.add('open');
     }

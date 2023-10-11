@@ -9,11 +9,11 @@
         text-align: center;
         display: block;
         transition: all 0.3s ease;
+        z-index: 10;
     }
 
     nav ul.open {
         left: 0;
-        z-index: 10;
     }
 
     nav ul li {
@@ -82,7 +82,7 @@
         margin: 10px;
     }
 
-    #Materias article #asideMobile {
+    #Materias .asideMobile {
         display: none;
     }
 

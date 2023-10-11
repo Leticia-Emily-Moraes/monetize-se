@@ -1,11 +1,14 @@
 var ul = document.querySelector('nav ul');
 var menuBtn = document.getElementById('MenuHam');
+var container = document.getElementById('container');
 
 function MostrarMenu() {
     if (ul.classList.contains('open')) {
         ul.classList.remove('open');
+        container.style.zIndex = 0;
     } else {
         ul.classList.add('open');
+        container.style.zIndex = -10;
     }
 }
 menuBtn.addEventListener('click', () => {

@@ -177,7 +177,7 @@ h2 {
 
 #QuemSomosP ul {
     list-style-position: inside;
-    list-style: '🗸';
+    list-style: '\2713';
     font-weight: bolder;
     color: #0b73ea;
     text-align: start;
@@ -217,7 +217,7 @@ h2 {
 
 #ServicosP ul {
     list-style-position: inside;
-    list-style: '🗸';
+    list-style: '\2713';
     font-weight: bolder;
     color: #0b73ea;
 }

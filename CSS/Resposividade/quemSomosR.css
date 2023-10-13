@@ -40,6 +40,24 @@
         font-size: 1.2rem;
     }
 
+    #MVV {
+        text-align: center;
+    }
+
+    #MVV h1 {
+        display: block;
+        width: 100%;
+    }
+
+    #MVV article {
+        width: 350px;
+        margin: 10px;
+    }
+
+    #MVV article img {
+        width: 200px;
+    }
+
     #Newsletter {
         display: flex;
         flex-direction: row;
@@ -91,6 +109,27 @@
     body header {
         height: 400px;
         padding: 15px 15px 15px 30px;
+    }
+
+    #QuemSomos {
+        max-width: 1000px;
+    }
+
+    #QuemSomos p {
+        margin: 5px 20px;
+    }
+
+    #MVV {
+        max-width: 1000px;
+    }
+
+    #MVV article {
+        width: calc(90%/3);
+        height: 90%;
+    }
+
+    #MVV article img {
+        width: 150px;
     }
 
     #Newsletter {

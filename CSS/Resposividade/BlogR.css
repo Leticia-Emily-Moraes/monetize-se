@@ -69,6 +69,7 @@
         height: auto;
         grid-gap: 10px;
     }
+
     #Materias article a {
         width: 100%;
         height: 100%;
@@ -86,13 +87,15 @@
         display: none;
     }
 
-    #Materias a p{
+    #Materias a p {
         margin: 0px 20px;
     }
-    #Materias a .temaM{
+
+    #Materias a .temaM {
         padding: 5px;
     }
-    #Materias a h4{
+
+    #Materias a h4 {
         margin: 0px 20px;
     }
 
@@ -169,7 +172,8 @@
         padding: 5px;
         margin: 10px 0px 0px 0px;
     }
-    #Materias .imgMateria{
+
+    #Materias .imgMateria {
         height: 200px;
     }
 

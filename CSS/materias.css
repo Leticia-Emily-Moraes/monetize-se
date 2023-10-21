@@ -45,7 +45,9 @@ li,
 strong {
     font-family: var(--fontTexto);
 }
-
+body p{
+    text-align: justify;
+}
 body h1,
 h2,
 h3,

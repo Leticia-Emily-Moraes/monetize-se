@@ -76,7 +76,8 @@
         margin: 10px;
     }
 
-    #Materias article aside {
+    #Materias article aside,
+    #Materias #filtro{
         display: block;
         width: 100%;
         height: 100%;

@@ -61,6 +61,10 @@
         width: 45%;
         display: block;
     }
+    
+    #QuemSomosP div figure img{
+        width: 100%;
+    }
 
     #QuemSomosP div ul {
         width: 45%;
@@ -78,6 +82,10 @@
     #ServicosP div figure {
         width: 45%;
         display: block;
+    }
+
+    #ServicosP div figure img{
+        width: 100%;
     }
 
     #ServicosP div ul {

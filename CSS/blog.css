@@ -42,7 +42,8 @@ body p,
 a,
 ul,
 li,
-strong {
+strong, 
+label {
     font-family: var(--fontTexto);
 }
 
@@ -449,6 +450,29 @@ main {
     height: auto;
     width: auto;
     margin: 10px 20px;
+}
+#Materias #filtroM{
+    width: 100%;
+    padding: 10px;
+}
+#filtroM h3{
+    text-align: start;
+    margin: 5px;
+}
+#filtroM form{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#filtroM form div{
+    display: inline-block;
+}
+
+#Materias #filtro{
+    background-color: aliceblue;
+    height: 100%;
+    width: 100%;
+    display: none;
 }
 
 #Materias aside {

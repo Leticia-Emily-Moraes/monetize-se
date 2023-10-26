@@ -119,58 +119,25 @@ function inicializarMapa() {
       });
 }
 
-document.querySelectorAll('.economiaC').addEventListener('change', function(){
-    var tema1 = this;
-    var blocos = document.querySelectorAll('.bloco');
-    console.log("clicou");
-    
-    blocos.forEach(function(bloco){
-        if(tema1.checked && !bloco.classList.contains('T1')){
-            bloco.classList.add('oculto');
-            console.log("add oculto");
-        }
-        else{
-            bloco.classList.remove('oculto');
-            console.log("rev oculto");
-        }
-    });
-});
-document.querySelectorAll('.educFinanceiraC').addEventListener('change', function(){
-    var tema2 = this;
-    var blocos = document.querySelectorAll('.bloco');
+document.addEventListener("DOMContentLoaded", function() {
+    const filters = document.querySelectorAll("#filtro input[type=checkbox]");
+    const temaElements = document.querySelectorAll(".temaM");
 
-    blocos.forEach(function(bloco){
-        if(tema2.checked && !bloco.classList.contains('T2')){
-            bloco.classList.add('oculto');
-        }
-        else{
-            bloco.classList.remove('oculto');
-        }
+    filters.forEach(filter => {
+        filter.addEventListener("change", updateVisibility);
     });
-});
-document.querySelectorAll('.endividamentoC').addEventListener('change', function(){
-    var tema3 = this;
-    var blocos = document.querySelectorAll('.bloco');
 
-    blocos.forEach(function(bloco){
-        if(tema3.checked && !bloco.classList.contains('T3')){
-            bloco.classList.add('oculto');
-        }
-        else{
-            bloco.classList.remove('oculto');
-        }
-    });
-});
-document.querySelectorAll('.investimentosC').addEventListener('change', function(){
-    var tema4 = this;
-    var blocos = document.querySelectorAll('.bloco');
+    function updateVisibility() {
+        const selecionados = Array.from(filters)
+            .filter(filter => filter.checked)
+            .map(filter => filter.value);
 
-    blocos.forEach(function(bloco){
-        if(tema4.checked && !bloco.classList.contains('T4')){
-            bloco.classList.add('oculto');
-        }
-        else{
-            bloco.classList.remove('oculto');
-        }
-    });
+        temaElements.forEach(element => {
+            if (selecionados.length === 0 || selecionados.includes(element.textContent)) {
+                element.parentElement.style.display = "";
+            } else {
+                element.parentElement.style.display = "none";
+            }
+        });
+    }
 });

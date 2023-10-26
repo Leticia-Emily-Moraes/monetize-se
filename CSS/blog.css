@@ -484,8 +484,8 @@ main {
     display: inline-block;
 }
 
-#Materias #filtro {
-    height: 100%;
+#filtro {
+    height: auto;
     width: 100%;
     display: none;
     padding: 10px;

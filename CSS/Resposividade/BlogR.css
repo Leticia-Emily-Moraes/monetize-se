@@ -56,34 +56,49 @@
     #texto p {
         font-size: 1rem;
     }
-
-    #categorias article a {
-        max-width: 250px;
-        margin: 20px 20px 0 0;
-    }
-
     #Materias article {
         margin-top: 20px;
         display: grid;
-        grid-template-columns: 35% 35% 25%;
-        grid-template-rows: 400px 400px 400px;
+        grid-template-columns: 75% 25%;
         height: auto;
         grid-gap: 15px;
     }
-
-    #Materias article a {
+    #areaMaterias{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: auto;
+        grid-gap: 15px;
+    }
+    #areaMaterias a {
         width: 100%;
         height: 100%;
         margin: 10px;
     }
-    #Materias #filtroM{
+    #areaMaterias #filtroM {
         display: none;
     }
-    
     #Materias #filtro{
-        display: block;
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
     }
-
+    #Materias #filtro div{
+        width: 100%;
+        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #areaAnuncios{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        height: 100%;
+        grid-gap: 15px;
+    }
     #Materias article aside{
         display: block;
         width: 100%;
@@ -93,18 +108,6 @@
 
     #Materias .asideMobile {
         display: none;
-    }
-
-    #Materias a p {
-        margin: 0px 20px;
-    }
-
-    #Materias a .temaM {
-        padding: 5px;
-    }
-
-    #Materias a h4 {
-        margin: 0px 20px;
     }
 
     #Newsletter {

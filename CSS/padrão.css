@@ -142,7 +142,16 @@ main {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    margin: 10px 0px;
+    margin: 50px 0px 0px 0px;
+}
+
+#Newsletter input {
+    width: 300px;
+    height: 40px;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #94d8ff;
+    border-radius: 5px;
 }
 
 #Newsletter h1,
@@ -150,26 +159,49 @@ p {
     margin: 5px;
 }
 
-#Newsletter span {
-    font-size: 1.75rem;
-}
-
-#Newsletter form {
+#formN {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#Newsletter form input {
+#Newsletter span {
+    font-size: 1.75rem;
+}
+
+
+#Newsletter input {
     width: 80%;
     height: 40px;
     margin: 10px;
     padding: 5px;
     border: 1px solid #94d8ff;
     border-radius: 5px;
+}
+
+#Newsletter input[type=submit] {
+    border: none;
+    color: #ffffff;
+    width: auto;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.3em;
+    margin: 8px 15px;
+    padding-bottom: 5px;
+    background: linear-gradient(#ffffff 0%, #ffffff 98%);
+    background-size: 0px 2px;
+    background-repeat: no-repeat;
+    background-position: left 90%;
+}
+
+#Newsletter input[type=submit]:hover {
+    color: #000000;
+    transition: 0.3s;
+    background-size: 100% 2px;
+    text-shadow: 2px 3px 10px #4480c5dd;
 }
 
 footer {

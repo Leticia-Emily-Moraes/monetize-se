@@ -118,3 +118,59 @@ function inicializarMapa() {
         infoWindow.open(map, marker);
       });
 }
+
+document.querySelectorAll('.economiaC').addEventListener('change', function(){
+    var tema1 = this;
+    var blocos = document.querySelectorAll('.bloco');
+    console.log("clicou");
+    
+    blocos.forEach(function(bloco){
+        if(tema1.checked && !bloco.classList.contains('T1')){
+            bloco.classList.add('oculto');
+            console.log("add oculto");
+        }
+        else{
+            bloco.classList.remove('oculto');
+            console.log("rev oculto");
+        }
+    });
+});
+document.querySelectorAll('.educFinanceiraC').addEventListener('change', function(){
+    var tema2 = this;
+    var blocos = document.querySelectorAll('.bloco');
+
+    blocos.forEach(function(bloco){
+        if(tema2.checked && !bloco.classList.contains('T2')){
+            bloco.classList.add('oculto');
+        }
+        else{
+            bloco.classList.remove('oculto');
+        }
+    });
+});
+document.querySelectorAll('.endividamentoC').addEventListener('change', function(){
+    var tema3 = this;
+    var blocos = document.querySelectorAll('.bloco');
+
+    blocos.forEach(function(bloco){
+        if(tema3.checked && !bloco.classList.contains('T3')){
+            bloco.classList.add('oculto');
+        }
+        else{
+            bloco.classList.remove('oculto');
+        }
+    });
+});
+document.querySelectorAll('.investimentosC').addEventListener('change', function(){
+    var tema4 = this;
+    var blocos = document.querySelectorAll('.bloco');
+
+    blocos.forEach(function(bloco){
+        if(tema4.checked && !bloco.classList.contains('T4')){
+            bloco.classList.add('oculto');
+        }
+        else{
+            bloco.classList.remove('oculto');
+        }
+    });
+});

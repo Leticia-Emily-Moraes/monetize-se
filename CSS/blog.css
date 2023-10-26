@@ -42,12 +42,12 @@ body p,
 a,
 ul,
 li,
-strong, 
+strong,
 label {
     font-family: var(--fontTexto);
 }
 
-body p{
+body p {
     text-align: justify;
 }
 
@@ -330,6 +330,7 @@ main {
 }
 
 #Materias {
+    margin-top: 20px;
     width: 90%;
     min-width: 320px;
     display: flex;
@@ -374,7 +375,6 @@ main {
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    border: 3px solid var(--corBotao);
     padding: 5px;
     margin: 20px 0px;
     color: #000000;
@@ -382,7 +382,12 @@ main {
 }
 
 #Materias a:hover {
-    box-shadow: 5px 5px 15px #0000004a;
+    box-shadow: 1px 1px 10px 5px #4480c550;
+    transition: 0.3s;
+}
+
+.oculto {
+    display: none;
 }
 
 #Materias .imgMateria {
@@ -455,28 +460,49 @@ main {
     width: auto;
     margin: 10px 20px;
 }
-#Materias #filtroM{
+
+#Materias #filtroM {
     width: 100%;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-#filtroM h3{
+
+#filtroM h3 {
     text-align: start;
     margin: 5px;
 }
-#filtroM form{
+
+#filtroM form {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-#filtroM form div{
+
+#filtroM form div {
     display: inline-block;
 }
 
-#Materias #filtro{
-    background-color: aliceblue;
+#Materias #filtro {
     height: 100%;
     width: 100%;
     display: none;
+    padding: 10px;
+}
+
+#filtro h3 {
+    text-align: start;
+    margin: 5px;
+}
+
+#filtro form {
+    width: 100%;
+}
+
+#filtro form div {
+    display: inline-block;
+    padding: 10px;
 }
 
 #Materias aside {
@@ -495,7 +521,16 @@ main {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    margin: 10px 0px;
+    margin: 50px 0px 0px 0px;
+}
+
+#Newsletter input {
+    width: 300px;
+    height: 40px;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #94d8ff;
+    border-radius: 5px;
 }
 
 #Newsletter h1,
@@ -503,26 +538,50 @@ p {
     margin: 5px;
 }
 
-#Newsletter span {
-    font-size: 1.75rem;
-}
-
-#Newsletter form {
+#formN,
+form {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#Newsletter form input {
+#Newsletter span {
+    font-size: 1.75rem;
+}
+
+
+#Newsletter input {
     width: 80%;
     height: 40px;
     margin: 10px;
     padding: 5px;
     border: 1px solid #94d8ff;
     border-radius: 5px;
+}
+
+#Newsletter input[type=submit] {
+    border: none;
+    color: #ffffff;
+    width: auto;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.3em;
+    margin: 8px 15px;
+    padding-bottom: 5px;
+    background: linear-gradient(#ffffff 0%, #ffffff 98%);
+    background-size: 0px 2px;
+    background-repeat: no-repeat;
+    background-position: left 90%;
+}
+
+#Newsletter input[type=submit]:hover {
+    color: #000000;
+    transition: 0.3s;
+    background-size: 100% 2px;
+    text-shadow: 2px 3px 10px #4480c5dd;
 }
 
 footer {

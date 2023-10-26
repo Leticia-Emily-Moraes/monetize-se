@@ -10,6 +10,7 @@
         display: block;
         transition: all 0.3s ease;
         z-index: 10;
+        height: 100%;
     }
 
     nav ul.open {
@@ -67,7 +68,7 @@
         grid-template-columns: 35% 35% 25%;
         grid-template-rows: 400px 400px 400px;
         height: auto;
-        grid-gap: 10px;
+        grid-gap: 15px;
     }
 
     #Materias article a {
@@ -75,9 +76,15 @@
         height: 100%;
         margin: 10px;
     }
-
-    #Materias article aside,
+    #Materias #filtroM{
+        display: none;
+    }
+    
     #Materias #filtro{
+        display: block;
+    }
+
+    #Materias article aside{
         display: block;
         width: 100%;
         height: 100%;
@@ -103,19 +110,39 @@
     #Newsletter {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
     }
-
-    #Newsletter div {
-        width: 40%;
+    
+    #Newsletter h1,
+    p {
+        text-align: start;
     }
 
-    #Newsletter form {
+    #Newsletter article {
         width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: start;
+        padding: 10px;
+        max-width: 500px;
+    }
+    form{
+        width: 100%;
     }
 
-    #Newsletter form input {
+    #Newsletter #formN{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        max-width: 500px;
+    }
+
+    #Newsletter input{
         width: 300px;
         height: 40px;
         margin: 10px;
@@ -179,15 +206,16 @@
     }
 
     #Newsletter {
-        padding: 20px;
+        padding: 10px;
     }
 
-    #Newsletter div {
-        width: 40%;
+    #Newsletter div{
+        max-width: 1000px;
     }
 
     #Newsletter form {
-        width: 40%;
+        width: 50%;
+        margin: 0;
     }
 
     footer #containerF {

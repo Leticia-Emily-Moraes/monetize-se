@@ -41,22 +41,23 @@
         font-size: 1.2rem;
     }
 
-    #MVV {
+    #Servicos {
         text-align: center;
         flex-direction: row;
     }
 
-    #MVV h1 {
+    #Servicos h1 {
         display: block;
         width: 100%;
     }
 
-    #MVV article {
+    #Servicos article {
         width: 350px;
+        height: 380px;
         margin: 10px;
     }
 
-    #MVV article img {
+    #Servicos article img {
         width: 200px;
     }
 
@@ -125,25 +126,17 @@
         padding: 15px 15px 15px 30px;
     }
 
-    #QuemSomos {
+    #Servicos {
         max-width: 1000px;
     }
 
-    #QuemSomos p {
-        margin: 5px 20px;
-    }
-
-    #MVV {
-        max-width: 1000px;
-    }
-
-    #MVV article {
+    #Servicos article {
         width: calc(90%/3);
-        height: 90%;
+        justify-content: space-between;
+        height: 500px;
     }
-
-    #MVV article img {
-        width: 150px;
+    #Servicos article h3 {
+        text-align: center;
     }
 
     #Newsletter {

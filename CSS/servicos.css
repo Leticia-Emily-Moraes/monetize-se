@@ -118,6 +118,11 @@ nav ul li a:hover {
     text-shadow: 2px 3px 10px #4480c5c4;
 }
 
+#Ativado {
+    text-shadow: 2px 3px 10px #4480c5c4;
+    color: #000000;
+}
+
 nav #MenuHam {
     cursor: pointer;
     height: 50px;
@@ -125,6 +130,7 @@ nav #MenuHam {
 }
 
 main {
+    padding: 20px 0;
     width: 100%;
     height: auto;
     display: flex;
@@ -134,165 +140,50 @@ main {
     align-items: center;
 }
 
-header {
-    width: 90%;
-    margin: 10px 0;
+#Servicos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#Servicos #rodapeDoServ{
+    width: 80%;
     text-align: center;
 }
 
-header h3 {
-    padding: 10px 0;
-}
-
-#imgG {
-    width: 100%;
-    margin: auto;
-}
-
-header #imgG img {
-    width: 100%;
-}
-
-#TextoMateria {
-    width: 90%;
-    margin: 20px 10px;
-    font-size: 1.2rem;
-}
-
-#TextoMateria article p,
-#TextoMateria article li {
-    margin: 15px;
-}
-
-#TextoMateria article ul,
-#TextoMateria article ol {
-    margin: 20px;
-}
-
-#Materias {
-    width: 90%;
-    min-width: 320px;
+#Servicos article {
+    max-width: 420px;
+    width: auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     padding: 10px;
-    margin: 0 30px;
+    margin: 10px;
+    text-align: justify;
+    border-bottom: 5px solid #4481C5;
 }
 
-#Materias #ComAside {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
+#Servicos .Precos{
+    text-align: center;
 }
 
-#Materias article {
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#Materias article aside {
-    width: 100%;
-    max-width: 450px;
-    height: 200px;
+#Servicos .Precos span{
+    color: #4481C5;
     display: block;
+    text-align: center;
+    font-size: 2em;
 }
 
-#Materias a {
-    width: 100%;
-    max-width: 450px;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 5px;
-    margin: 20px 0px;
-    color: #000000;
-    text-decoration: none;
-}
+#Servicos .Precos span .sifrao{
+    font-size: 0.5em;
+    display: inline;
 
-#Materias a:hover {
-    box-shadow: 1px 1px 10px 5px #4480c550;
-    transition: 0.3s;
 }
-
-#Materias .imgMateria {
-    height: 100px;
-    width: 100%;
-    margin-bottom: 10px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#M1 {
-    background-image: url('../IMG/Materia1.jpg');
-}
-
-#M2 {
-    background-image: url('../IMG/Materia2.jpg');
-}
-
-#M3 {
-    background-image: url('../IMG/Materia3.jpg');
-}
-
-#M4 {
-    background-image: url('../IMG/Materia4.jpg');
-}
-
-#M5 {
-    background-image: url('../IMG/Materia5.jpg');
-}
-
-#M6 {
-    background-image: url('../IMG/Materia6.jpg');
-}
-
-#M7 {
-    background-image: url('../IMG/Materia7.jpg');
-}
-
-#M8 {
-    background-image: url('../IMG/Materia8.jpg');
-}
-
-#M9 {
-    background-image: url('../IMG/Materia9.jpg');
-}
-
-#Materias a p {
-    height: auto;
-    width: auto;
-    margin: 10px 20px;
-}
-
-#Materias a .temaM {
-    border: 2px solid #000000;
-    padding: 5px;
-}
-
-#Materias a h4 {
-    height: auto;
-    width: auto;
-    margin: 10px 20px;
-}
-
-#Materias aside {
-    background-color: aliceblue;
-    height: auto;
-    width: 30%;
-    display: none;
-}
-
 #Newsletter {
     width: 100%;
     background-color: var(--corBotao);
@@ -305,12 +196,22 @@ header #imgG img {
     margin: 50px 0px 0px 0px;
 }
 
+#Newsletter input {
+    width: 300px;
+    height: 40px;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #94d8ff;
+    border-radius: 5px;
+}
+
 #Newsletter h1,
 p {
     margin: 5px;
 }
 
-#formN, form{
+#formN,
+form {
     width: 100%;
     display: flex;
     flex-wrap: wrap;

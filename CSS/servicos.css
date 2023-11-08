@@ -142,6 +142,7 @@ main {
 
 #Servicos {
     width: 100%;
+    padding: 0px 20px;
     height: auto;
     display: flex;
     flex-wrap: wrap;

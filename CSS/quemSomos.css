@@ -164,7 +164,7 @@ main {
 #MVV article {
     max-width: 400px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;

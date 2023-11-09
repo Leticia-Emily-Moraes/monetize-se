@@ -94,31 +94,6 @@ interval = setInterval(() => {
     }
 }, 10000);
 
-inicializarMapa();
-function inicializarMapa() {
-    var mapOptions = {
-        center: { lat: -23.69147, lng: -46.54886 },
-        zoom: 15
-    };
-    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-
-    var coordenadas = { lat: -23.69147, lng: -46.54886 };
-
-    var marker = new google.maps.Marker({
-        position: coordenadas,
-        map: map,
-        title: "Condomínio Domo Business"
-    });
-    var infoWindow = new google.maps.InfoWindow({
-        content: "Monetize-se"
-      });
-
-      // Adicionar evento de clique no marcador
-      marker.addListener('click', function() {
-        infoWindow.open(map, marker);
-      });
-}
-
 document.addEventListener("DOMContentLoaded", function() {
     const filters = document.querySelectorAll("#filtro input[type=checkbox]");
     const temaElements = document.querySelectorAll(".temaM");

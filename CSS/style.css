@@ -356,7 +356,14 @@ footer #Empresa img {
     width: 250px;
 }
 
-footer #map {
+footer #map,
+footer #map iframe {
+    height: 200px;
+    width: 100%;
+    padding: 5px;
+}
+
+footer #map iframe {
     height: 200px;
     width: 100%;
     padding: 5px;

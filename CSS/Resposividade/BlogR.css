@@ -97,7 +97,7 @@
         grid-template-columns: 100%;
         grid-template-rows: 375px 375px 375px 375px 375px;
         height: 100%;
-        grid-gap: 15px;
+        grid-row-gap: 15px;
     }
     ins{
         height: 375px;
@@ -212,7 +212,7 @@
         grid-template-columns: 100%;
         grid-template-rows: 375px 375px 375px 375px 375px;
         height: 100%;
-        grid-gap: 15px;
+        grid-row-gap: 15px;
     }
     #Materias a {
         padding: 5px;

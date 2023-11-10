@@ -66,7 +66,7 @@
     #areaMaterias{
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 375px 375px 375px 375px 375px;
         height: 100%;
     }
     #areaMaterias a {
@@ -95,9 +95,12 @@
     #areaAnuncios{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 375px 375px 375px 375px 375px;
         height: 100%;
         grid-gap: 15px;
+    }
+    ins{
+        height: 375px;
     }
     #Materias article aside{
         display: block;
@@ -198,7 +201,19 @@
         max-width: 1000px;
         padding: 0;
     }
-
+    #areaMaterias{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 375px 375px 375px 375px 375px;
+        height: 100%;
+    }
+    #areaAnuncios{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 375px 375px 375px 375px 375px;
+        height: 100%;
+        grid-gap: 15px;
+    }
     #Materias a {
         padding: 5px;
         margin: 10px 0px 0px 0px;
